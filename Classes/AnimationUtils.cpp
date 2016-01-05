@@ -51,5 +51,8 @@ Animation* AnimationUtils::createAniWithPlist(const char *name, float delay, uns
     animation->setDelayPerUnit(delay);
     animation->setLoops(iLoops);
     animation->setRestoreOriginalFrame(true);
+    //加入缓存
+    auto cache = AnimationCache::getInstance();
+    cache->addAnimation(animation, name);
     return animation;
 }

@@ -9,6 +9,7 @@
 #include "SceneManager.hpp"
 #include "LoadingScene.hpp"
 #include "MenuScene.hpp"
+#include "GameScene.hpp"
 
 USING_NS_CC;
 
@@ -29,6 +30,10 @@ void SceneManager::changeScene(SceneType sceneType){
             break;
         case MenuScene:
             scene = MenuScene::creatScene();
+            break;
+        case GameStartScene:
+            scene = GameScene::createScene();
+            break;
         default:
             break;
     }

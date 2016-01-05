@@ -83,6 +83,16 @@
 		F54F78B71C2EC07A00BC1A55 /* LoadingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F54F78B41C2EC07A00BC1A55 /* LoadingScene.cpp */; };
 		F557AD5B1C2FEC0500CE73D4 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F557AD5A1C2FEC0500CE73D4 /* SceneManager.cpp */; };
 		F557AD5C1C30418800CE73D4 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F557AD5A1C2FEC0500CE73D4 /* SceneManager.cpp */; };
+		F557AD5F1C31247C00CE73D4 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F557AD5D1C31247C00CE73D4 /* GameScene.cpp */; };
+		F557AD601C31247C00CE73D4 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F557AD5D1C31247C00CE73D4 /* GameScene.cpp */; };
+		F557AD641C31262000CE73D4 /* Enity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F557AD621C31262000CE73D4 /* Enity.cpp */; };
+		F557AD651C31262000CE73D4 /* Enity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F557AD621C31262000CE73D4 /* Enity.cpp */; };
+		F557AD681C3128E400CE73D4 /* MyPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F557AD661C3128E400CE73D4 /* MyPlane.cpp */; };
+		F557AD691C3128E400CE73D4 /* MyPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F557AD661C3128E400CE73D4 /* MyPlane.cpp */; };
+		F57AB34F1C35221400D9EC0D /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F57AB34D1C35221400D9EC0D /* Bullet.cpp */; };
+		F57AB3501C35221400D9EC0D /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F57AB34D1C35221400D9EC0D /* Bullet.cpp */; };
+		F57AB3531C37A46900D9EC0D /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F57AB3511C37A46900D9EC0D /* Enemy.cpp */; };
+		F57AB3541C37A46900D9EC0D /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F57AB3511C37A46900D9EC0D /* Enemy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +201,16 @@
 		F54F78B51C2EC07A00BC1A55 /* LoadingScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LoadingScene.hpp; sourceTree = "<group>"; };
 		F557AD591C2FEBE600CE73D4 /* SceneManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SceneManager.hpp; sourceTree = "<group>"; };
 		F557AD5A1C2FEC0500CE73D4 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
+		F557AD5D1C31247C00CE73D4 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
+		F557AD5E1C31247C00CE73D4 /* GameScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameScene.hpp; sourceTree = "<group>"; };
+		F557AD621C31262000CE73D4 /* Enity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Enity.cpp; sourceTree = "<group>"; };
+		F557AD631C31262000CE73D4 /* Enity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Enity.hpp; sourceTree = "<group>"; };
+		F557AD661C3128E400CE73D4 /* MyPlane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyPlane.cpp; sourceTree = "<group>"; };
+		F557AD671C3128E400CE73D4 /* MyPlane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyPlane.hpp; sourceTree = "<group>"; };
+		F57AB34D1C35221400D9EC0D /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
+		F57AB34E1C35221400D9EC0D /* Bullet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bullet.hpp; sourceTree = "<group>"; };
+		F57AB3511C37A46900D9EC0D /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Enemy.cpp; sourceTree = "<group>"; };
+		F57AB3521C37A46900D9EC0D /* Enemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Enemy.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +347,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F557AD611C3125B400CE73D4 /* Enity */,
 				F535034F1C2E96C500EE22CA /* Scene */,
 				F535034E1C2E96B400EE22CA /* Global */,
 				F535034D1C2E96AB00EE22CA /* Utils */,
@@ -415,8 +436,25 @@
 				F54F78A91C2EB53C00BC1A55 /* MenuScene.hpp */,
 				F54F78B41C2EC07A00BC1A55 /* LoadingScene.cpp */,
 				F54F78B51C2EC07A00BC1A55 /* LoadingScene.hpp */,
+				F557AD5D1C31247C00CE73D4 /* GameScene.cpp */,
+				F557AD5E1C31247C00CE73D4 /* GameScene.hpp */,
 			);
 			name = Scene;
+			sourceTree = "<group>";
+		};
+		F557AD611C3125B400CE73D4 /* Enity */ = {
+			isa = PBXGroup;
+			children = (
+				F557AD621C31262000CE73D4 /* Enity.cpp */,
+				F557AD631C31262000CE73D4 /* Enity.hpp */,
+				F557AD661C3128E400CE73D4 /* MyPlane.cpp */,
+				F557AD671C3128E400CE73D4 /* MyPlane.hpp */,
+				F57AB34D1C35221400D9EC0D /* Bullet.cpp */,
+				F57AB34E1C35221400D9EC0D /* Bullet.hpp */,
+				F57AB3511C37A46900D9EC0D /* Enemy.cpp */,
+				F57AB3521C37A46900D9EC0D /* Enemy.hpp */,
+			);
+			name = Enity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,11 +605,16 @@
 				F54F78AE1C2EB6A000BC1A55 /* Bg.cpp in Sources */,
 				F53503521C2E96F500EE22CA /* AnimationUtils.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				F557AD641C31262000CE73D4 /* Enity.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				F557AD681C3128E400CE73D4 /* MyPlane.cpp in Sources */,
 				F557AD5B1C2FEC0500CE73D4 /* SceneManager.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				F57AB34F1C35221400D9EC0D /* Bullet.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				F557AD5F1C31247C00CE73D4 /* GameScene.cpp in Sources */,
+				F57AB3531C37A46900D9EC0D /* Enemy.cpp in Sources */,
 				F54F78AA1C2EB53C00BC1A55 /* MenuScene.cpp in Sources */,
 				F54F78B61C2EC07A00BC1A55 /* LoadingScene.cpp in Sources */,
 			);
@@ -581,13 +624,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F557AD691C3128E400CE73D4 /* MyPlane.cpp in Sources */,
 				F54F78AF1C2EB6A000BC1A55 /* Bg.cpp in Sources */,
 				F53503531C2E96F500EE22CA /* AnimationUtils.cpp in Sources */,
 				F557AD5C1C30418800CE73D4 /* SceneManager.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				F54F78AB1C2EB53C00BC1A55 /* MenuScene.cpp in Sources */,
 				F54F78B71C2EC07A00BC1A55 /* LoadingScene.cpp in Sources */,
+				F57AB3541C37A46900D9EC0D /* Enemy.cpp in Sources */,
+				F57AB3501C35221400D9EC0D /* Bullet.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				F557AD651C31262000CE73D4 /* Enity.cpp in Sources */,
+				F557AD601C31247C00CE73D4 /* GameScene.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,6 +797,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 565288909@qq.com (LEQ37JJ46P)";
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -768,7 +817,7 @@
 					"$(SRCROOT)/../cocos2d/external",
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -781,6 +830,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 565288909@qq.com (LEQ37JJ46P)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -798,7 +848,7 @@
 					"$(SRCROOT)/../cocos2d/external",
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";

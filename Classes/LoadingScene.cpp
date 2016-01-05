@@ -11,6 +11,7 @@
 #include "AppMacros.h"
 #include "SimpleAudioEngine.h"
 #include "SceneManager.hpp"
+#include "AnimationUtils.hpp"
 
 USING_NS_CC;
 
@@ -34,21 +35,27 @@ bool LoadingScene::init(){
 }
 
 void LoadingScene::loadingAssets(){
+    TCache->addImageAsync(Image_Main, CC_CALLBACK_1(LoadingScene::loadOver, this));
     TCache->addImageAsync(Image_Bg_1,CC_CALLBACK_1(LoadingScene::loadOver, this));
     TCache->addImageAsync(Image_Bg_2, CC_CALLBACK_1(LoadingScene::loadOver, this));
     _loadAudioThread = new std::thread(&LoadingScene::loadingAudio,this);
-    this->scheduleOnce(schedule_selector(LoadingScene::changeScene), 3);
 }
 
 void LoadingScene::loadingAudio(){
-    Audio->preloadEffect(Music_Boom);
-    loadNum++;
+    Audio->preloadEffect(Audio_Effect_boom);
+    Audio->preloadEffect(Audio_Effect_shoot);
 }
 
 void LoadingScene::loadOver(Texture2D* texture){
     loadNum++;
-    if(loadNum==3) CCLOG("loadingOver");
-    CCLOG("loadnum-%d",loadNum);
+    if (loadNum==1) {
+        SpriteFrameCache::getInstance()->addSpriteFramesWithFile(Plist_Main);
+        AnimationUtils::createAniWithPlist(Ani_Plane, 0.3f, -1);
+        AnimationUtils::createAniWithPlist(Ani_Boom, 0.1f, 1);
+    }
+    if (loadNum==3) {
+        this->scheduleOnce(schedule_selector(LoadingScene::changeScene), 1);
+    }
 }
 
 void LoadingScene::changeScene(float delay){

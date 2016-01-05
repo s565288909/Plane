@@ -22,6 +22,10 @@ public:
     virtual bool init();
 private:
     Bg* bg;
+    Label* startgamelabel;
+    bool myTouchBegin(Touch* touch, Event* event);
+    void myTouchMove(Touch* touch, Event* event);
+    void myTouchEnd(Touch* touch, Event* event);
 };
 
 #endif /* MenuScene_hpp */

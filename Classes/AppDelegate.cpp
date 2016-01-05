@@ -38,7 +38,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto glview = director->getOpenGLView();
     if(!glview) {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
-        glview = GLViewImpl::createWithRect("MyPlane", Rect(0, 0, designResolutionSize.width, designResolutionSize.height));
+        glview = GLViewImpl::createWithRect("MyPlane", Rect(0, 0, 400, 600));
 #else
         glview = GLViewImpl::create("MyPlane");
 #endif
@@ -58,7 +58,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     vector<string> searchPath;
 
     // if the frame's height is larger than the height of medium size.
-    if (frameSize.height > smallResource.size.width)
+    if (frameSize.height > smallResource.size.height)
     {
         searchPath.push_back(mediumResource.directory);
         director->setContentScaleFactor(MIN(mediumResource.size.height/designResolutionSize.height, mediumResource.size.width/designResolutionSize.width));
@@ -81,6 +81,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // run
     director->runWithScene(scene);
     */
+    
+    director->setDisplayStats(true);
      
     SceneManager::getInstance()->changeScene(SceneManager::LoadingScene);
 
